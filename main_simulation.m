@@ -20,7 +20,7 @@ files_list_out = dir(fullfile(folder_out, '**/*.csv*'));                   % Lis
 files_list_env = dir(fullfile(folder_env, '**/*.csv*'));                   % Lists all c3d files in the folder
 out_table = table();
 
-for i = 3:length(files_list_int)
+for i = 1:length(files_list_int)
 
     file_path_int = [files_list_int(i).folder filesep files_list_int(i).name];
     file_path_out = [files_list_out(i).folder filesep files_list_out(i).name];
